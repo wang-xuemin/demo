@@ -22,7 +22,7 @@ class Client
      * 获取连接
      * @return void
      */
-    public function connect()
+    public static function connect()
     {
         try {
             // 创建连接
@@ -79,7 +79,7 @@ class Client
      * 断开连接
      * @return void
      */
-    public function disconnect()
+    public static function disconnect()
     {
         self::$connect->disconnect();
     }
